@@ -1,0 +1,215 @@
+/* General Page Styles */
+.home-care-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header Section */
+.page-header {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.page-header p {
+  font-size: 1.2rem;
+}
+
+/* Service Section */
+.homecare-service {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.homecare-service h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.homecare-service p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.service-item {
+  background-color: #f1f3f5;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+.service-item:hover {
+  transform: translateY(-5px);
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+.service-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.service-item p {
+  color: #777;
+}
+
+/* Caregivers Section */
+.caregivers {
+  padding: 60px 20px;
+  background-color: #eef2f7;
+}
+.caregivers h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+.filter-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+.filter-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.filter-group select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.caregivers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.caregiver-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.caregiver-card:hover {
+  transform: translateY(-5px);
+}
+.caregiver-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.caregiver-info {
+  padding: 15px;
+}
+.caregiver-info h3 {
+  margin: 0 0 8px;
+}
+.caregiver-profession {
+  color: #007bff;
+  font-weight: bold;
+}
+.caregiver-details {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: #555;
+}
+.caregiver-specialization {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+.caregiver-availability {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.caregiver-availability.available {
+  color: green;
+}
+.caregiver-availability.unavailable {
+  color: red;
+}
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Booking Form Section */
+.booking-form {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.booking-form form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.form-row input,
+.form-row select,
+textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+textarea {
+  resize: vertical;
+}
+input[type="file"] {
+  padding: 5px 0;
+}
+label {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid,
+  .caregivers-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
